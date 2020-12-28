@@ -1,0 +1,51 @@
+.scroll {
+  position: absolute;
+  bottom: 50px;
+  width: 93px;
+  overflow: hidden;
+}
+.scroll-text {
+  font-family: Roboto;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 5px;
+  filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.25));
+}
+.scroll-line {
+  width: 100%;
+  height: 3px;
+  background-color: #fdd502;
+  animation: scroll-line 1.5s ease-in-out infinite both;
+}
+@keyframes scroll-line {
+  0%,
+  5% {
+    width: 0px;
+  }
+  33%,
+  66% {
+    left: 0px;
+    width: 100%;
+  }
+  95%,
+  100% {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll {
+    width: 88px;
+  }
+  .scroll-text {
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .scroll {
+    width: 80px;
+  }
+  .scroll-text {
+    line-height: 22px;
+  }
+}
