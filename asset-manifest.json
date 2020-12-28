@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Ray4.0_TaipeiCitizenServicePlatform/static/css/main.8ddf2593.chunk.css",
-    "main.js": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/main.d3774250.chunk.js",
-    "main.js.map": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/main.d3774250.chunk.js.map",
-    "runtime-main.js": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/runtime-main.e73960f0.js",
-    "runtime-main.js.map": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/runtime-main.e73960f0.js.map",
-    "static/js/2.495fb0a8.chunk.js": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/2.495fb0a8.chunk.js",
-    "static/js/2.495fb0a8.chunk.js.map": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/2.495fb0a8.chunk.js.map",
-    "index.html": "/Ray4.0_TaipeiCitizenServicePlatform/index.html",
-    "precache-manifest.a7c241c2e723fb66d840f659892d6d9d.js": "/Ray4.0_TaipeiCitizenServicePlatform/precache-manifest.a7c241c2e723fb66d840f659892d6d9d.js",
-    "service-worker.js": "/Ray4.0_TaipeiCitizenServicePlatform/service-worker.js",
-    "static/css/main.8ddf2593.chunk.css.map": "/Ray4.0_TaipeiCitizenServicePlatform/static/css/main.8ddf2593.chunk.css.map",
-    "static/js/2.495fb0a8.chunk.js.LICENSE.txt": "/Ray4.0_TaipeiCitizenServicePlatform/static/js/2.495fb0a8.chunk.js.LICENSE.txt",
-    "static/media/1.png": "/Ray4.0_TaipeiCitizenServicePlatform/static/media/1.424bb197.png"
+    "main.css": "/portfolio/static/css/main.8ddf2593.chunk.css",
+    "main.js": "/portfolio/static/js/main.d0a7d8b7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d0a7d8b7.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b449097c.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b449097c.js.map",
+    "static/js/2.495fb0a8.chunk.js": "/portfolio/static/js/2.495fb0a8.chunk.js",
+    "static/js/2.495fb0a8.chunk.js.map": "/portfolio/static/js/2.495fb0a8.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.e53748a12139ed7024a7daa2cbc6fa9a.js": "/portfolio/precache-manifest.e53748a12139ed7024a7daa2cbc6fa9a.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.8ddf2593.chunk.css.map": "/portfolio/static/css/main.8ddf2593.chunk.css.map",
+    "static/js/2.495fb0a8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.495fb0a8.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/portfolio/static/media/1.424bb197.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e73960f0.js",
+    "static/js/runtime-main.b449097c.js",
     "static/js/2.495fb0a8.chunk.js",
     "static/css/main.8ddf2593.chunk.css",
-    "static/js/main.d3774250.chunk.js"
+    "static/js/main.d0a7d8b7.chunk.js"
   ]
 }
