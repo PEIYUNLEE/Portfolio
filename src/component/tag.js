@@ -1,17 +1,25 @@
 import React from "react";
 
-import './tag.css'
 
-class Header extends React.Component {
+class Tag extends React.Component {
   constructor(props) {
     super(props);
     };
   
   render() {
+    const style = {
+      backgroundColor: 'rgba(82, 82, 82, 0.62)',
+      color: '#fff',
+      fontFamily: 'Noto Sans',
+      fontWeight: '400',
+      padding: '5px 8px',
+      marginLeft: '12px'
+    };
+
     return (
-      <div></div>
+      <div style={style}>{this.props.content}</div>
     );
   }
 }
 
-export default Header;
+export default Tag;

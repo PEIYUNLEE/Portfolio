@@ -28,22 +28,22 @@ class Home extends React.Component {
         <div className="home-school">國立臺北教育大學 - 數位科技設計學系</div>
         <ul>
           <li>
-            <a href="http://facebook.com/may3256">
+            <a href="http://facebook.com/may3256" target="_blank">
               <img src={icon_fb} />
             </a>
           </li>
           <li>
-            <a href="https://github.com/PEIYUNLEE">
+            <a href="https://github.com/PEIYUNLEE" target="_blank">
               <img src={icon_github} />
             </a>
           </li>
           <li>
-            <a href="https://codepen.io/may3256/">
+            <a href="https://codepen.io/may3256/" target="_blank">
               <img src={icon_codepen} />
             </a>
           </li>
           <li>
-            <a href="https://medium.com/@may1092200258">
+            <a href="https://medium.com/@may1092200258" target="_blank">
               <img src={icon_medium} />
             </a>
           </li>

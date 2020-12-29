@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif, "Roboto", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
   font-size: 18px;
   position: relative;
@@ -19,7 +19,6 @@ h1 {
 }
 
 a {
-  color: #303036;
   text-decoration: none;
 }
 

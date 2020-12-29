@@ -1,20 +1,39 @@
 .work1 {
   width: 100%;
   overflow: hidden;
-  border: 1px soild red;
+  display: flex;
 }
 .work1-bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #7acfc9;
 }
-.work1-bg img {
-  position: absolute;
+.work1-img {
   width: 100%;
+  max-height: 100%;
+}
+.work1-img-l {
+  display: block;
+}
+.work1-img-m {
+  display: none;
+}
+.work1-content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 7vw;
+  bottom: 100px;
+  width: 465px;
+  z-index: 1;
 }
 .work1-text-container {
-  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .work1 .work1-text-h3 {
   font-size: 36px;
@@ -23,10 +42,81 @@
   letter-spacing: 0.075em;
   color: #303036;
 }
+.work1-text-h3-2 {
+  padding-left: 15px;
+}
+.work1 .work1-text-line {
+  margin-top: 5px;
+  width: 5px;
+  height: 36px;
+  background-color: #303036;
+}
 .work1 p {
-  font-size: 18px;
   text-align: right;
   letter-spacing: 0.075em;
   font-weight: bold;
   color: #303036;
+}
+.work1-tag-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.work1-button-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .work1-img-m {
+    display: block;
+  }
+  .work1-img-l {
+    display: none;
+  }
+  .work1-content-container {
+    bottom: 50px;
+    width: 365px;
+  }
+  .work1-content-container::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top:-25%;
+    left: -10%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .work1-text-container {
+    margin-bottom: 10px;
+  }
+  .work1 .work1-text-h3 {
+    font-size: 28px;
+  }
+  .work1 .work1-text-line {
+    margin-top: 1px;
+    height: 30px;
+  }
+  .work1-tag-container {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work1 .work1-text-h3 {
+    font-size: 22px;
+  }
+  .work1-content-container::before{
+    display: none;
+  }
+  .work1-bg::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@media screen and (max-width: 380px) {
 }
