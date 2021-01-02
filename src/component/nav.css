@@ -1,10 +1,240 @@
-.navigation{
-    width: 100%;
-    height: 100vh;
+.navigation_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+  overflow: hidden;
 }
-.navigation nav{
-    position: absolute;
-    background-color: rgba(0,0,0,0.9);
-    width: 100%;
+.nav-active {
+  height: 100%;
+}
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  z-index: 1;
+}
+.header-logo {
+  font-style: italic;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: bold;
+  border-bottom: 4px solid #303036;
+  display: inline-block;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-left: 30px;
+}
+.nav-active .header-logo {
+  border-bottom: 4px solid #fff;
+  color: #fff;
+}
+.hamberger {
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+  cursor: pointer;
+}
+nav .hamberger .line {
+  width: 40px;
+  height: 5px;
+  background-color: #303036;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav-active .hamberger .line {
+  background-color: #fff;
+  /* transform: translateY(150%) rotate(45deg); */
+  animation-name: line1;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.nav-active .hamberger .line:nth-child(2) {
+  /* transform: translateY(-150%) rotate(-45deg); */
+  animation-name: line2;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.navigation_wrapper .menu-bg {
+  transition: all 2s;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  opacity: 0;
+  display: none;
+  transform-origin: 50% 50%;
+  transform: translate(90%, -90%) scale(1.5);
+  border-radius: 100%;
+  background-color: #303036;
+}
+.nav-active .menu-bg {
+  transition: all 2s;
+  right: 0%;
+  top: 0%;
+  opacity: 1;
+  display: block;
+  animation-name: nav;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+@keyframes nav {
+  0% {
+    opacity: 0;
+    transform: translate(90%, -90%) scale(1.5);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1.5);
+  }
+}
+@keyframes line1 {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(150%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(150%) rotate(45deg);
+  }
+}
+@keyframes line2 {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-150%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-150%) rotate(-45deg);
+  }
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 0 100px;
+  display: none;
+}
+
+.nav-active .menu {
+  display: flex;
+}
+
+.menu ul {
+  width: max-content;
+}
+
+.menu li {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 0 0;
+}
+.menu .line {
+  width: 0;
+  height: 45px;
+  background-color: #fff;
+  margin: 6px 30px 0 0;
+}
+.menu a {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.menu a:hover {
+  color: #fdd502;
+}
+.menu a:active {
+  color: #fdd502;
+}
+.menu a:hover .line {
+  width: 6px;
+  background-color: #fdd502;
+}
+.menu a:active .line {
+  width: 6px;
+  background-color: #fdd502;
+}
+.menu a:focus .line {
+  width: 6px;
+  background-color: #fdd502;
+}
+
+@media screen and (max-width: 768px) {
+  nav .hamberger .line {
+    width: 35px;
+  }
+  .navigation_wrapper .menu-bg {
+    min-width: 100vw;
+    width: 100vh;
     height: 100vh;
+  }
+  .menu li {
+    margin: 30px 0 0 0;
+  }
+  .menu a {
+    font-size: 36px;
+  }
+  .menu .line {
+    width: 6px;
+    background-color: #fff;
+  }
+  .menu a:active {
+    color: #fdd502;
+  }
+  .menu a:hover .line {
+    width: 6px;
+    background-color: #fdd502;
+  }
+  .menu a:active .line {
+    width: 6px;
+    background-color: #fdd502;
+  }
+  .menu a:focus .line {
+    width: 6px;
+    background-color: #fdd502;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo {
+    margin-left: 25px;
+  }
+  .hamberger {
+    margin-right: 30px;
+    height: 17px;
+  }
+  nav .hamberger .line {
+    width: 30px;
+    height: 4px;
+  }
+  .menu{
+    justify-content: center;
+  }
+  .menu li {
+    margin: 20px 0 0 0;
+  }
+  .menu a {
+    font-size: 30px;
+  }
+  .menu a:active {
+    color: #fdd502;
+  }
+  .menu .line {
+    height: 33px;
+    margin: 3px 24px 0 0;
+  }
 }

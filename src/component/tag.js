@@ -13,7 +13,7 @@ class Tag extends React.Component {
       fontFamily: 'Noto Sans',
       fontWeight: '400',
       padding: '5px 8px',
-      marginLeft: '12px'
+      width: 'max-content'
     };
 
     return (

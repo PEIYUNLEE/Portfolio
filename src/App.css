@@ -12,6 +12,7 @@
   position: relative;
   letter-spacing: 0.055em;
   color: #303036;
+  transition: all .2s;
 }
 
 h1 {

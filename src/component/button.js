@@ -13,7 +13,7 @@ class Button extends React.Component {
     if (this.props.type === 1) {
       return (
         <button className="button">
-          <a href={this.props.link} target="_blank">
+          <a href="/" target="_blank">
           {this.props.content}
           </a>
         </button>

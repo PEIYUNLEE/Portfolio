@@ -3,19 +3,19 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 
 import "./app.css";
 
-import Header from "./component/header";
+import Navigation from "./component/nav";
 import Home from "./component/page/home";
 import Work1 from "./component/page/work1";
 import Footer from "./component/footer";
 
-import worksData from './data/works'
+import worksData from "./data/works";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      works: worksData
+      works: worksData,
     };
 
     this._renderWorks = this._renderWorks.bind(this);
@@ -26,20 +26,22 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter className="App">
-        <Header />
+        <Navigation />
         <Home />
-        {this._renderWorks()}
-        {/* <Switch>
-          <Route
+        <div className="web-wrapper" id="web">
+        {this._renderWorks()}</div>
+        <Switch>
+          {/* <Route
             exact
             path="/"
             component={() => (
               <div>
                 <Home />
+                {this._renderWorks()}
               </div>
             )}
-          />
-        </Switch> */}
+          /> */}
+        </Switch>
         <Footer />
       </HashRouter>
     );
@@ -48,19 +50,7 @@ class App extends React.Component {
   _renderWorks() {
     let list = [];
     this.state.works.forEach((element, index) => {
-      list.push(
-        <Work1
-          key={"work1"+index}
-          t1={element.name}
-          t2={element.info}
-          t3={element.info2}
-          tag={element.tag}
-          imgUrl_L={element.imgUrl_L}
-          imgUrl_M={element.imgUrl_M}
-          color={element.color}
-          webUrl={element.webUrl}
-        />
-      );
+      list.push(<Work1 id={"web"+(index+1)} key={"work1" + index} data={element} />);
     });
     return list;
   }
