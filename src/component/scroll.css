@@ -1,8 +1,12 @@
 .scroll {
-  position: absolute;
-  bottom: 50px;
   width: 93px;
   overflow: hidden;
+  margin: 40px auto;
+}
+.home > .scroll {
+  position: absolute;
+  bottom: 50px;
+  margin: 0 0;
 }
 .scroll-text {
   font-family: Roboto;

@@ -2,11 +2,13 @@ import work_web1_L from "./../assets/images/work/l/1.png";
 import work_web2_L from "./../assets/images/work/l/2.png";
 import work_web3_L from "./../assets/images/work/l/3.png";
 import work_web4_L from "./../assets/images/work/l/4.png";
+import work_app1_L from "./../assets/images/work/l/5.png";
 
 import work_web1_M from "./../assets/images/work/m/1.png";
 import work_web2_M from "./../assets/images/work/m/2.png";
 import work_web3_M from "./../assets/images/work/m/3.png";
 import work_web4_M from "./../assets/images/work/m/4.png";
+import work_app1_M from "./../assets/images/work/m/5.png";
 
 import work_web1_bg from "./../assets/images/work/bg1.png";
 import work_web2_bg from "./../assets/images/work/bg3.png";
@@ -18,10 +20,18 @@ import work_web2_demo from "./../assets/images/work/demo2.png";
 import work_web3_demo from "./../assets/images/work/demo4.png";
 import work_web4_demo from "./../assets/images/work/demo3.png";
 
+import work_game1_bg from "./../assets/images/work/l/6-1.png";
+import work_game1_L from "./../assets/images/work/l/6-2.png";
+import work_game1_M from "./../assets/images/work/l/6-2.png";
+
+import work_game2_bg from "./../assets/images/work/l/7-1.png";
+import work_game2_L from "./../assets/images/work/l/7-2.png";
+import work_game2_M from "./../assets/images/work/l/7-2.png";
+
 import work_web1_flow from "./../assets/images/work/flow.svg";
 import work_web1_sus from "./../assets/images/work/sus.svg";
 
-const worksData = [
+const worksData_web = [
   {
     index: 0,
     name: "《臺北市市民服務大平台》",
@@ -159,5 +169,49 @@ const worksData = [
     },
   },
 ];
+const worksData_app = [
+  {
+    index: 0,
+    name: "《找食》",
+    name_info: "美食收藏評論APP",
+    color: "#7acfc9",
+    main: {
+      info: "2018 - 人機介面設計課程 - 介面設計",
+      content:
+        "多功能搜尋美食店家，並且具有收藏評論的功能，利用找食找到你的美食之路。",
+      tag: ["UX", "UI"],
+      img: [work_app1_L, work_app1_M],
+    },
+  },
+];
+const worksData_game = [
+  {
+    index: 0,
+    name: "《WELF》",
+    name_info: "RPG遊戲",
+    video: "https://www.youtube.com/watch?v=rSlw0u-UCIg",
+    main: {
+      info: "2018 - 遊戲設計概論 - 期末專題",
+      content:
+        "用水精靈被人類綁架的故事隱含水汙染議題，再結合冒險、RPG故事等元素，讓玩家可以透過遊戲並省思環境汙染議題。",
+      tag: ["企劃", "程式"],
+      bg: work_game1_bg,
+      img: [work_game1_L, work_game1_M],
+    },
+  },
+  {
+    index: 1,
+    name: "《RGB》",
+    name_info: "3D 解謎遊戲",
+    video: "https://www.youtube.com/watch?v=cU6VJ07zqN8",
+    main: {
+      info: "2019 - 計算機圖學課程 - 期末專題",
+      content: "在各具特色的房間裡尋找線索，解出謎題獲得藏在最後房間的寶藏。",
+      tag: ["企劃", "程式"],
+      bg: work_game2_bg,
+      img: [work_game2_L, work_game2_M],
+    },
+  },
+];
 
-export default worksData;
+export default [worksData_web, worksData_app,worksData_game];

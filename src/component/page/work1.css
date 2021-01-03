@@ -10,13 +10,13 @@
 .work1-main-anim-hide {
   animation-name: relativemove;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-fill-mode: both;
 }
 .work1-main-anim-show {
   animation-name: relativemove2;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-direction: reverse;
   animation-fill-mode: both;
 }
@@ -82,7 +82,7 @@
 .work1-h3-active {
   left: 100%;
 }
-.work1 .work1-h3 {
+.work1-h3 {
   font-size: 36px;
   font-weight: bold;
   text-align: right;
@@ -92,13 +92,13 @@
   transition: all 0.5s;
   left: 40vw;
 }
-.work1 .work1-h3-active {
+.work1-h3-active {
   left: 0%;
 }
 .work1-h3-2 {
   padding-left: 15px;
 }
-.work1 .work1-line {
+.work1-line {
   margin-top: 5px;
   width: 5px;
   height: 36px;
@@ -106,7 +106,7 @@
   left: 40vw;
   transition: all 0.5s;
 }
-.work1 .work1-line-active {
+.work1-line-active {
   left: 0%;
 }
 .work1-main p {
@@ -119,6 +119,10 @@
 }
 .work1-main .p-active {
   left: 0%;
+}
+.work2-cotent-container p{
+  width: 80%;
+  font-weight: 400;
 }
 .work1-main-tag-container {
   display: grid;
@@ -149,14 +153,14 @@
 .work1-info-anim-show {
   animation-name: absolutemove;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-fill-mode: both;
 }
 
 .work1-info-anim-hide {
   animation-name: absolutemove2;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation-fill-mode: both;
 }
 
@@ -334,15 +338,18 @@
   .work1-text-container {
     margin-bottom: 10px;
   }
-  .work1 .work1-h3 {
+  .work1-h3 {
     font-size: 28px;
   }
-  .work1 .work1-line {
+  .work1-line {
     margin-top: 1px;
     height: 30px;
   }
   .work1-main-tag-container {
     margin-bottom: 15px;
+  }
+  .work2-cotent-container p{
+    width: 100%;
   }
 
   /* info */
@@ -435,7 +442,7 @@
   .work1 {
     min-height: auto;
   }
-  .work1 .work1-h3 {
+  .work1-h3 {
     font-size: 22px;
   }
   .work1-main-content-container::before {
@@ -449,7 +456,7 @@
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.4);
   }
-  .work1 .work1-line {
+  .work1-line {
     margin-top: 2px;
     height: 28px;
     width: 4px;
@@ -515,5 +522,8 @@
   }
   .work1-main-anim-show {
     animation-duration: 1s;
+  }
+  .work2-cotent-container p{
+    width: 80%;
   }
 }
