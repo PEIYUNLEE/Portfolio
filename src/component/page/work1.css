@@ -90,7 +90,7 @@
   color: #303036;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: all 0.5s;
-  left: 40vw;
+  /* left: 40vw; */
 }
 .work1-h3-active {
   left: 0%;
@@ -103,8 +103,9 @@
   width: 5px;
   height: 36px;
   background-color: #303036;
-  left: 40vw;
+  /* left: 40vw; */
   transition: all 0.5s;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .work1-line-active {
   left: 0%;
@@ -114,7 +115,7 @@
   letter-spacing: 0.075em;
   font-weight: bold;
   color: #303036;
-  left: 40vw;
+  /* left: 40vw; */
   transition: all 0.75s 0.25s;
 }
 .work1-main .p-active {
@@ -129,7 +130,7 @@
   grid-gap: 12px;
   grid-auto-flow: column;
   margin-bottom: 20px;
-  left: 40vw;
+  /* left: 40vw; */
   transition: all 1s 0.5s;
 }
 .work1-main-tag-container-active {
@@ -458,7 +459,7 @@
   }
   .work1-line {
     margin-top: 2px;
-    height: 28px;
+    height: 26px;
     width: 4px;
   }
   .work1-main-img-m {

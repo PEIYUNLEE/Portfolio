@@ -20,12 +20,14 @@ class App extends React.Component {
     this.state = {
       web: worksData[0],
       app: worksData[1],
-      game: worksData[2]
+      game: worksData[2],
+      device: worksData[3],
     };
 
     this._renderWebWorks = this._renderWebWorks.bind(this);
     this._renderAppWorks = this._renderAppWorks.bind(this);
     this._renderGameWorks = this._renderGameWorks.bind(this);
+    this._renderDeviceWorks = this._renderDeviceWorks.bind(this);
   }
 
   componentDidMount() {}
@@ -44,6 +46,9 @@ class App extends React.Component {
         <Scroll />
         <div className="game-wrapper" id="game">
           {this._renderGameWorks()}
+        </div>
+        <div className="device-wrapper" id="device">
+          {this._renderDeviceWorks()}
         </div>
         <Switch>
           {/* <Route
@@ -87,6 +92,20 @@ class App extends React.Component {
     this.state.game.forEach((element, index) => {
       list.push(
         <Work3 id={"game" + (index + 1)} key={"game" + index} data={element} />
+      );
+    });
+    return list;
+  }
+
+  _renderDeviceWorks() {
+    let list = [];
+    this.state.device.forEach((element, index) => {
+      list.push(
+        <Work3
+          id={"device" + (index + 1)}
+          key={"device" + index}
+          data={element}
+        />
       );
     });
     return list;

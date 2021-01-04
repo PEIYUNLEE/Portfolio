@@ -39,6 +39,7 @@ class Work3 extends React.Component {
           <div className="work3-text-container">
             <p className="work3-p work3-p2">{this.props.data.main.content}</p>
           </div>
+          <div className="work3-tag-container">{this._renderTag()}</div>
           <div className="work3-button-container">
             <Button
               link={this.props.data.video}

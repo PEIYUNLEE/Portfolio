@@ -38,15 +38,15 @@ class Work1 extends React.Component {
             id={this.props.id + "-main-content"}
           >
             <div className="work1-text-container">
-              <Controller>
+              {/* <Controller>
                 <Scene
                   offset={-150}
                   classToggle="work1-h3-active"
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
-                >
+                > */}
                   <h3 className="work1-h3">{this.props.data.name}</h3>
-                </Scene>
+                {/* </Scene>
               </Controller>
               <Controller>
                 <Scene
@@ -54,9 +54,9 @@ class Work1 extends React.Component {
                   classToggle="work1-line-active"
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
-                >
+                > */}
                   <div className="work1-line"></div>
-                </Scene>
+                {/* </Scene>
               </Controller>
               <Controller>
                 <Scene
@@ -64,41 +64,41 @@ class Work1 extends React.Component {
                   classToggle="work1-h3-active"
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
-                >
+                > */}
                   <div className="work1-h3 work1-h3-2">
                     {this.props.data.name_info}
                   </div>
-                </Scene>
-              </Controller>
+                {/* </Scene>
+              </Controller> */}
             </div>
             <div className="work1-text-container">
-              <Controller>
+              {/* <Controller>
                 <Scene
                   offset={-150}
                   classToggle="p-active"
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
-                >
+                > */}
                   <p
                     dangerouslySetInnerHTML={this._renderHTMLText(
                       this.props.data.main.info
                     )}
                   ></p>
-                </Scene>
-              </Controller>
+                {/* </Scene>
+              </Controller> */}
             </div>
-            <Controller>
+            {/* <Controller>
               <Scene
                 offset={-150}
                 classToggle="work1-main-tag-container-active"
                 triggerElement={"#" + this.props.id + "-main-content"}
                 reverse={false}
-              >
+              > */}
                 <div className="work1-main-tag-container">
                   {this._renderTag()}
                 </div>
-              </Scene>
-            </Controller>
+              {/* </Scene>
+            </Controller> */}
                 <div className="work1-main-button-container">
                   <Button
                     link={this.props.data.website}

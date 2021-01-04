@@ -22,11 +22,12 @@ import work_web4_demo from "./../assets/images/work/demo3.png";
 
 import work_game1_bg from "./../assets/images/work/l/6-1.png";
 import work_game1_L from "./../assets/images/work/l/6-2.png";
-import work_game1_M from "./../assets/images/work/l/6-2.png";
 
 import work_game2_bg from "./../assets/images/work/l/7-1.png";
 import work_game2_L from "./../assets/images/work/l/7-2.png";
-import work_game2_M from "./../assets/images/work/l/7-2.png";
+
+import work_device_bg from "./../assets/images/work/l/8-1.png";
+import work_device_L from "./../assets/images/work/l/8-2.png";
 
 import work_web1_flow from "./../assets/images/work/flow.svg";
 import work_web1_sus from "./../assets/images/work/sus.svg";
@@ -196,7 +197,7 @@ const worksData_game = [
         "用水精靈被人類綁架的故事隱含水汙染議題，再結合冒險、RPG故事等元素，讓玩家可以透過遊戲並省思環境汙染議題。",
       tag: ["企劃", "程式"],
       bg: work_game1_bg,
-      img: [work_game1_L, work_game1_M],
+      img: [work_game1_L],
     },
   },
   {
@@ -209,9 +210,25 @@ const worksData_game = [
       content: "在各具特色的房間裡尋找線索，解出謎題獲得藏在最後房間的寶藏。",
       tag: ["企劃", "程式"],
       bg: work_game2_bg,
-      img: [work_game2_L, work_game2_M],
+      img: [work_game2_L],
+    },
+  },
+];
+const worksData_device = [
+  {
+    index: 0,
+    name: "《粉紅小00》",
+    name_info: "機器人撲滿",
+    video: "https://www.youtube.com/watch?v=rSlw0u-UCIg",
+    main: {
+      info: "2018 - 電子電路實驗課程 - 期中專題",
+      content:
+        "具有鬧鐘功能的機器人存錢筒，透過光敏電阻感測金錢投入，利用OLED和LED燈製作鬧鐘功能，並且可使用壓力感測器關掉鬧鐘。",
+      tag: ["企劃","電路規劃", "程式",, "Arduino"],
+      bg: work_device_bg,
+      img: [work_device_L],
     },
   },
 ];
 
-export default [worksData_web, worksData_app,worksData_game];
+export default [worksData_web, worksData_app,worksData_game,worksData_device];
