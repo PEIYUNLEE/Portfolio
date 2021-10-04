@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
+import { Controller, Scene } from "react-scrollmagic";
 
 import "./app.css";
 
@@ -22,6 +23,7 @@ class App extends React.Component {
       app: worksData[1],
       game: worksData[2],
       device: worksData[3],
+      current: "",
     };
 
     this._renderWebWorks = this._renderWebWorks.bind(this);
@@ -35,11 +37,20 @@ class App extends React.Component {
   render() {
     return (
       <HashRouter className="app">
-        <Navigation />
+        <Navigation current={this.state.current} />
         <Home />
-        <div className="web-wrapper" id="web">
-          {this._renderWebWorks()}
-        </div>
+        <Controller>
+          <Scene
+            classToggle="work1-main-img-active"
+            triggerElement={"#" + this.props.id}
+            reverse={false}
+            indicator={true}
+          >
+            <div className="web-wrapper" id="web">
+              {this._renderWebWorks()}
+            </div>
+          </Scene>
+        </Controller>
         <div className="app-wrapper" id="app">
           {this._renderAppWorks()}
         </div>

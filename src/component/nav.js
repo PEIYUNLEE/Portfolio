@@ -24,6 +24,7 @@ class Navigation extends React.Component {
           <a href="/">
             <h1 className="header-logo">PEI-YUN</h1>
           </a>
+          <div className="nav-center">{this.props.current}</div>
           <div
             className="hamberger"
             onClick={() => {

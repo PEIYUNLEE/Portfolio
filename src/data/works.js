@@ -38,6 +38,7 @@ const worksData_web = [
     name: "《臺北市市民服務大平台》",
     name_info: "改造政府網站",
     color: "#7acfc9",
+    year:'2020',
     website:
       "https://peiyunlee.github.io/Ray4.0_TaipeiCitizenServicePlatform/#/",
     main: {
@@ -72,6 +73,7 @@ const worksData_web = [
     name: "《呷蝦咪》",
     name_info: "外賣點餐平台",
     color: "#EDC39A",
+    year:'2019',
     website: "https://test-firestore-847fa.firebaseapp.com/",
     main: {
       info: "跨平台前後端課程 - 期末專題",
@@ -108,6 +110,7 @@ const worksData_web = [
     name: "《Multic》",
     name_info: "音樂科普網站",
     color: "#CBADE2",
+    year:'2019',
     website: "https://peiyunlee.github.io/Web_F2E_Multic/",
     main: {
       info: "網頁前端設計與開發 - 期末專題",
@@ -143,6 +146,7 @@ const worksData_web = [
     name: "《WELF》",
     name_info: "遊戲官網",
     color: "#90B9FF",
+    year:'2019',
     website: "https://peiyunlee.github.io/Web_F2E_WELF/",
     main: {
       info: "網頁前端設計與開發 - 期末專題",

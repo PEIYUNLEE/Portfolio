@@ -17,6 +17,11 @@ nav {
   align-items: center;
   z-index: 1;
 }
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .header-logo {
   font-style: italic;
   font-family: "Fira Sans Extra Condensed", sans-serif;
@@ -221,7 +226,7 @@ nav .hamberger .line {
     width: 30px;
     height: 4px;
   }
-  .menu{
+  .menu {
     justify-content: center;
   }
   .menu li {

@@ -12,6 +12,7 @@
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-fill-mode: both;
+  will-change: transform;
 }
 .work1-main-anim-show {
   animation-name: relativemove2;
@@ -19,6 +20,7 @@
   animation-timing-function: linear;
   animation-direction: reverse;
   animation-fill-mode: both;
+  will-change: transform;
 }
 
 @keyframes relativemove {
@@ -121,7 +123,7 @@
 .work1-main .p-active {
   left: 0%;
 }
-.work2-cotent-container p{
+.work2-cotent-container p {
   width: 80%;
   font-weight: 400;
 }
@@ -156,6 +158,7 @@
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-fill-mode: both;
+  will-change: left, right;
 }
 
 .work1-info-anim-hide {
@@ -163,11 +166,17 @@
   animation-duration: 1.5s;
   animation-timing-function: linear;
   animation-fill-mode: both;
+  will-change: left, right;
 }
 
 .work1-info-img {
   max-width: 100%;
   height: 100%;
+}
+
+.work1-info-img svg {
+  width: 100%;
+  height: 500px;
 }
 
 @keyframes absolutemove {
@@ -299,6 +308,17 @@
   transform: rotate(-180deg);
   margin: 0px 20px 0px 0;
 }
+.work1 .home-year {
+  width: max-content;
+  z-index: 2;
+  top: 50%;
+}
+.work1 .home-year-line {
+  background-color: #555;
+}
+.work1 .home-year-text {
+  color: #555;
+}
 
 @media screen and (max-width: 1280px) {
   .work1-info-text-container p {
@@ -349,7 +369,7 @@
   .work1-main-tag-container {
     margin-bottom: 15px;
   }
-  .work2-cotent-container p{
+  .work2-cotent-container p {
     width: 100%;
   }
 
@@ -524,7 +544,7 @@
   .work1-main-anim-show {
     animation-duration: 1s;
   }
-  .work2-cotent-container p{
+  .work2-cotent-container p {
     width: 80%;
   }
 }

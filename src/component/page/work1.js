@@ -31,6 +31,11 @@ class Work1 extends React.Component {
     };
     return (
       <div className="work1" id={this.props.id}>
+        <div className="home-year">
+          <div className="home-year-line"></div>
+          <div className="home-year-text">{this.props.data.year}</div>
+          <div className="home-year-line"></div>
+        </div>
         <div className={this.state.mainClassName}>
           <div className="work1-main-bg" style={style_bg}></div>
           <div
@@ -45,8 +50,8 @@ class Work1 extends React.Component {
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
                 > */}
-                  <h3 className="work1-h3">{this.props.data.name}</h3>
-                {/* </Scene>
+              <h3 className="work1-h3">{this.props.data.name}</h3>
+              {/* </Scene>
               </Controller>
               <Controller>
                 <Scene
@@ -55,8 +60,8 @@ class Work1 extends React.Component {
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
                 > */}
-                  <div className="work1-line"></div>
-                {/* </Scene>
+              <div className="work1-line"></div>
+              {/* </Scene>
               </Controller>
               <Controller>
                 <Scene
@@ -65,10 +70,10 @@ class Work1 extends React.Component {
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
                 > */}
-                  <div className="work1-h3 work1-h3-2">
-                    {this.props.data.name_info}
-                  </div>
-                {/* </Scene>
+              <div className="work1-h3 work1-h3-2">
+                {this.props.data.name_info}
+              </div>
+              {/* </Scene>
               </Controller> */}
             </div>
             <div className="work1-text-container">
@@ -79,12 +84,12 @@ class Work1 extends React.Component {
                   triggerElement={"#" + this.props.id + "-main-content"}
                   reverse={false}
                 > */}
-                  <p
-                    dangerouslySetInnerHTML={this._renderHTMLText(
-                      this.props.data.main.info
-                    )}
-                  ></p>
-                {/* </Scene>
+              <p
+                dangerouslySetInnerHTML={this._renderHTMLText(
+                  this.props.data.main.info
+                )}
+              ></p>
+              {/* </Scene>
               </Controller> */}
             </div>
             {/* <Controller>
@@ -94,29 +99,27 @@ class Work1 extends React.Component {
                 triggerElement={"#" + this.props.id + "-main-content"}
                 reverse={false}
               > */}
-                <div className="work1-main-tag-container">
-                  {this._renderTag()}
-                </div>
-              {/* </Scene>
+            <div className="work1-main-tag-container">{this._renderTag()}</div>
+            {/* </Scene>
             </Controller> */}
-                <div className="work1-main-button-container">
-                  <Button
-                    link={this.props.data.website}
-                    content={"View Website"}
-                    type={2}
-                  />
-                  <button
-                    className="button"
-                    onClick={() => {
-                      this.setState({
-                        mainClassName: "work1-main work1-main-anim-hide",
-                        infoClassName: "work1-info work1-info-anim-show",
-                      });
-                    }}
-                  >
-                    <a>More</a>
-                  </button>
-                </div>
+            <div className="work1-main-button-container">
+              <Button
+                link={this.props.data.website}
+                content={"View Website"}
+                type={2}
+              />
+              <button
+                className="button"
+                onClick={() => {
+                  this.setState({
+                    mainClassName: "work1-main work1-main-anim-hide",
+                    infoClassName: "work1-info work1-info-anim-show",
+                  });
+                }}
+              >
+                <a>More</a>
+              </button>
+            </div>
           </div>
           <Controller>
             <Scene
